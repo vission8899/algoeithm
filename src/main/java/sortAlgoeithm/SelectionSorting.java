@@ -11,10 +11,12 @@ public class SelectionSorting {
         int size = arr.length;
         for (int i = 0; i < size; i++) {
             for (int j = i; j < size; j++) {
+                //遍历整个数组得到最小数字的下标
                 if (arr[j]<arr[minTag]){
                     minTag = j;
                 }
             }
+            //相等不用交换
             if (minTag != i){
                 SortUtils.swap(arr,i,minTag);
             }

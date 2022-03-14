@@ -7,8 +7,6 @@ package sortAlgoeithm;
 */
 public class BubbleSorting {
     public static void bubbleSorting(int[] arr){
-        int[] tmp = new int[]{};
-        int flag = 0;
         int size = arr.length-1;
         for (int i = 0; i < size; i++) {
             for (int j = 0; j < size ; j++) {
