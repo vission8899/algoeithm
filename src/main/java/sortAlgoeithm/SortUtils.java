@@ -31,6 +31,7 @@ public class SortUtils {
             double v = Math.random() * size;
             arr[i] = tmp[(int) v];
         }
+        printlnArr(arr);
         return arr;
     }
 
@@ -63,15 +64,19 @@ public class SortUtils {
         int[] a = arr;
         int[] b = arr;
         int[] c = arr;
+        int[] d = arr;
         BubbleSorting.bubbleSorting(a);
-        SelectionSorting.selectionSorting(b);
-        InsertSorting.insertSorting(c);
+//        SelectionSorting.selectionSorting(b);
+//        InsertSorting.insertSorting(c);
+        MergeSorting.mergeSorting(d);
         SortUtils.printlnArr(a);
-        SortUtils.printlnArr(b);
-        SortUtils.printlnArr(c);
+//        SortUtils.printlnArr(b);
+//        SortUtils.printlnArr(c);
+        SortUtils.printlnArr(d);
         try {
-            SortUtils.logarithm(a,b);
-            SortUtils.logarithm(a,c);
+//            SortUtils.logarithm(a,b);
+//            SortUtils.logarithm(a,c);
+            SortUtils.logarithm(a,d);
         } catch (Exception e) {
             e.printStackTrace();
         }
