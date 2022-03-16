@@ -31,7 +31,7 @@ public class SortUtils {
             double v = Math.random() * size;
             arr[i] = tmp[(int) v];
         }
-        printlnArr(arr);
+//        printlnArr(arr);
         return arr;
     }
 
@@ -51,6 +51,11 @@ public class SortUtils {
         }
     }
 
+    /**
+     * @description 打印数组
+     * @author  weicheng.lu
+     * @date   2022/3/17 00:22
+    */
     public static void printlnArr(int[] arr) {
         for (int cur : arr){
             System.out.print(String.valueOf(cur)+" ");
@@ -58,25 +63,49 @@ public class SortUtils {
         System.out.println("\n");
     }
 
+    /**
+     * @description 复制数组
+     * @author  weicheng.lu
+     * @date   2022/3/17 00:22
+    */
+    public static int[] copyArr(int[] arr) {
+        int length = arr.length;
+        int[] copyArr = new int[length];
+        for (int i = 0; i < length; i++) {
+            copyArr[i] = arr[i];
+        }
+        return copyArr;
+    }
+
     public static void main(String[] args) {
         int[] arr = SortUtils.getArr(10000);
         SortUtils.printlnArr(arr);
-        int[] a = arr;
-        int[] b = arr;
-        int[] c = arr;
-        int[] d = arr;
-        BubbleSorting.bubbleSorting(a);
-//        SelectionSorting.selectionSorting(b);
-//        InsertSorting.insertSorting(c);
-        MergeSorting.mergeSorting(d);
-        SortUtils.printlnArr(a);
-//        SortUtils.printlnArr(b);
-//        SortUtils.printlnArr(c);
-        SortUtils.printlnArr(d);
+        int[] arrBubbleSorting = copyArr(arr);
+        int[] arrSelectionSorting = copyArr(arr);
+        int[] arrInsertSorting = copyArr(arr);
+        int[] arrMergeSorting = copyArr(arr);
+        int[] arrQuickSorting = copyArr(arr);
+        //冒泡排序
+        BubbleSorting.bubbleSorting(arrBubbleSorting);
+        printlnArr(arrBubbleSorting);
+        //选择排序
+        SelectionSorting.selectionSorting(arrSelectionSorting);
+        printlnArr(arrSelectionSorting);
+        //插入排序
+        InsertSorting.insertSorting(arrInsertSorting);
+        printlnArr(arrInsertSorting);
+        //归并排序
+        MergeSorting.mergeSorting(arrMergeSorting);
+        printlnArr(arrMergeSorting);
+        //快速排序
+        QuickSorting.quickSorting(arrQuickSorting);
+        printlnArr(arrQuickSorting);
         try {
-//            SortUtils.logarithm(a,b);
-//            SortUtils.logarithm(a,c);
-            SortUtils.logarithm(a,d);
+            SortUtils.logarithm(arrBubbleSorting,arrMergeSorting);
+            SortUtils.logarithm(arrSelectionSorting,arrBubbleSorting);
+            SortUtils.logarithm(arrInsertSorting,arrBubbleSorting);
+            SortUtils.logarithm(arrMergeSorting,arrBubbleSorting);
+            SortUtils.logarithm(arrQuickSorting,arrBubbleSorting);
         } catch (Exception e) {
             e.printStackTrace();
         }
