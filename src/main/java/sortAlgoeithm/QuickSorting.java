@@ -32,6 +32,11 @@ public class QuickSorting {
         quickSortingV3(arr, 0, arr.length-1);
     }
 
+    /**
+     * @description 荷兰国旗 分两层
+     * @author  weicheng.lu
+     * @date   2022/3/17 00:26
+    */
     public static int[] partitionV1(int[] arr,int l,int r){
         int less = l-1;
         while(l<r){
@@ -45,7 +50,11 @@ public class QuickSorting {
         SortUtils.swap(arr,less+1,r);
         return new int[]{less+1};
     }
-
+    /**
+     * @description 荷兰国旗 分三层
+     * @author  weicheng.lu
+     * @date   2022/3/17 00:26
+     */
     public static int[] partitionV2(int[] arr,int l,int r){
         int less = l-1;
         int more = r;
