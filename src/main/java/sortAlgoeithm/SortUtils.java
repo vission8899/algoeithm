@@ -1,5 +1,10 @@
 package sortAlgoeithm;
 
+/**
+ * @description 排序工具
+ * @author  weicheng.lu
+ * @date   2022/3/17 00:24
+*/
 public class SortUtils {
     /**
      * 交换
