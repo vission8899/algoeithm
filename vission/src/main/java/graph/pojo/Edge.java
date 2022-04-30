@@ -1,11 +1,13 @@
 package graph.pojo;
 
-import lombok.Data;
-
-@Data
 public class Edge {
-    Node toNode;
-    Node fromNode;
+    public Node toNode;
+    public Node fromNode;
     //权重
-    Integer weight;
+    public Integer weight;
+    public Edge(Node fromNode, Node toNode, Integer weight) {
+        this.fromNode = fromNode;
+        this.toNode = toNode;
+        this.weight = weight;
+    }
 }

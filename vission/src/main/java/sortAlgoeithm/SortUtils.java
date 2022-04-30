@@ -8,6 +8,7 @@ package sortAlgoeithm;
 public class SortUtils {
     /**
      * 交换
+     * 亦或无进位加减法
      * @param arr
      * @param i
      * @param j
