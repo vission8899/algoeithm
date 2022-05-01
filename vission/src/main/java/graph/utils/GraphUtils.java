@@ -8,6 +8,7 @@ import jdk.nashorn.internal.ir.debug.JSONWriter;
 import java.util.Collection;
 import java.util.Collections;
 import java.util.List;
+import java.util.Optional;
 
 /**
  * 图初始化工具
@@ -43,9 +44,14 @@ public class GraphUtils {
     public static Graph createGraphByIntArr(int[][] graphArr) {
         Graph graph = new Graph();
         for (int i = 0; i < graphArr.length; i++) {
-            int to = graphArr[i][0];
-            int from = graphArr[i][1];
-            int weight = graphArr[i][2];
+            int from = graphArr[i][0];
+            int to = graphArr[i][1];
+            int weight = 0;
+            try {
+                weight = graphArr[i][2];
+            } catch (Exception e) {
+
+            }
             if (!graph.nodeMap.containsKey(to)) {
                 graph.nodeMap.put(to, new Node(to));
             }
