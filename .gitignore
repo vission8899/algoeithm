@@ -1,2 +1,6 @@
 leach/target
 vission/target
+.idea
+*.class
+*.iml
+target

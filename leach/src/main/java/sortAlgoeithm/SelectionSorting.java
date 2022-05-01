@@ -29,6 +29,6 @@ public class SelectionSorting {
         SortUtils.printlnArr(arr);
         selectionSorting(arr);
         SortUtils.printlnArr(arr);
-        selectionSorting(arr);
+//        selectionSorting(arr);
     }
 }

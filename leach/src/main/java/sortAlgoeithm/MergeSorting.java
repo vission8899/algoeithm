@@ -9,6 +9,7 @@ public class MergeSorting {
     public static void mergeSorting(int[] arr){
         process(arr,0, arr.length-1);
     }
+
     public static void process(int[] arr,int l,int r){
         if (r == l){
             return;
