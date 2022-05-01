@@ -21,14 +21,12 @@ public class Node {
         in = 0;
     }
 
-//    @Override
-//    public String toString() {
-//        return "Node{" +
-//                "value=" + value +
-//                ", nexts=" + nexts +
-//                ", edges=" + edges +
-//                ", out=" + out +
-//                ", in=" + in +
-//                '}';
-//    }
+    @Override
+    public String toString() {
+        return "Node{" +
+                "value=" + value +
+                ", out=" + out +
+                ", in=" + in +
+                '}';
+    }
 }

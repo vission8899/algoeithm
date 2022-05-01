@@ -3,6 +3,7 @@ package graph.utils;
 import graph.pojo.Edge;
 import graph.pojo.Graph;
 import graph.pojo.Node;
+import jdk.nashorn.internal.ir.debug.JSONWriter;
 
 import java.util.Collection;
 import java.util.Collections;
@@ -46,6 +47,8 @@ public class GraphUtils {
         if (nodes.isEmpty()){
             System.out.println("List is empty");
         }
-        System.out.println(nodes.toString());
+        for (Node node : nodes) {
+            System.out.println(node.toString());
+        }
     }
 }
