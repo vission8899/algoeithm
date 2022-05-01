@@ -36,7 +36,7 @@ public class BFS {
     }
 
     public static void main(String[] args) {
-        Graph graph = GraphUtils.createGraphByIntArr();
+        Graph graph = GraphUtils.createGraphByIntArr(GraphUtils.getGraphArr());
         GraphUtils.printlnList(bfs(graph.nodeMap.get(1)));
     }
 }

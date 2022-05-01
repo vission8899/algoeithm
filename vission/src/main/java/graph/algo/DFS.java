@@ -36,7 +36,7 @@ public class DFS {
     }
 
     public static void main(String[] args) {
-        Graph graph = GraphUtils.createGraphByIntArr();
+        Graph graph = GraphUtils.createGraphByIntArr(GraphUtils.getGraphArr());
         GraphUtils.printlnList(dfs(graph.nodeMap.get(1)));
     }
 }
