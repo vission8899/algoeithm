@@ -9,7 +9,8 @@ public class BubbleSorting {
     public static void bubbleSorting(int[] arr){
         int size = arr.length-1;
         for (int i = 0; i < size; i++) {
-            for (int j = 0; j < size ; j++) {
+            //每一轮冒泡最大的都在最右边
+            for (int j = 0; j < size-i ; j++) {
                 if (arr[j]>arr[j+1]){
                     SortUtils.swap(arr,j,j+1);
                 }
@@ -19,7 +20,7 @@ public class BubbleSorting {
     }
 
     public static void main(String[] args) {
-        int[] arr = SortUtils.getArr(100);
+        int[] arr = SortUtils.getArr(1000);
         SortUtils.printlnArr(arr);
         bubbleSorting(arr);
         SortUtils.printlnArr(arr);
