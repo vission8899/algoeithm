@@ -12,9 +12,9 @@ import java.util.*;
 public class TopoSort {
     public static List<Node> topoSort(Graph graph) {
         Queue<Node> zeroInQueue = new LinkedList<>();
-        Map<Node,Integer> inMap = new HashMap<>();
+        Map<Node, Integer> inMap = new HashMap<>();
         for (Node node : graph.nodeMap.values()) {
-            inMap.put(node,node.in);
+            inMap.put(node, node.in);
             if (node.in == 0) {
                 zeroInQueue.add(node);
             }
@@ -25,8 +25,8 @@ public class TopoSort {
             result.add(cur);
             for (Node next : cur.nexts) {
                 //每弹出一个则与弹出的点相关的点入度减1
-                inMap.put(next,inMap.get(next)-1);
-                if (inMap.get(next) == 0){
+                inMap.put(next, inMap.get(next) - 1);
+                if (inMap.get(next) == 0) {
                     zeroInQueue.add(next);
                 }
             }

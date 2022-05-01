@@ -11,7 +11,8 @@ public class Graph {
     public HashMap<Integer, Node> nodeMap;
     //图中的边
     public HashSet<Edge> edges;
-    public Graph(){
+
+    public Graph() {
         nodeMap = new HashMap<>();
         edges = new HashSet<>();
     }

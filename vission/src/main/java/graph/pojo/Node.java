@@ -13,7 +13,8 @@ public class Node {
     public Integer out;
     //入度
     public Integer in;
-    public Node(int value){
+
+    public Node(int value) {
         this.value = value;
         nexts = new ArrayList<>();
         edges = new ArrayList<>();

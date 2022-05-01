@@ -22,7 +22,7 @@ public class DFS {
         nodes.add(node);
         while (!stack.isEmpty()) {
             Node cur = stack.pop();
-            for (Node next:cur.nexts) {
+            for (Node next : cur.nexts) {
                 if (!visited.contains(next)) {
                     stack.add(cur);
                     stack.add(next);
