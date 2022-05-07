@@ -1,4 +1,4 @@
-package graph.leetCode;
+package leetCode.graph;
 
 /**
  * https://leetcode-cn.com/problems/find-center-of-star-graph/

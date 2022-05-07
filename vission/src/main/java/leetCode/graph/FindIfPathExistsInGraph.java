@@ -1,4 +1,4 @@
-package graph.leetCode;
+package leetCode.graph;
 
 import graph.algo.DFS;
 import graph.pojo.Graph;
