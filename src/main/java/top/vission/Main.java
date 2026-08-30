@@ -30,6 +30,7 @@ public class Main {
             log.info("====================");
             log.info("-----当前执行题号：LeetCode{},{}-----", problemEnum.getId(), problemEnum.getName());
             log.info("-----问题描述：{}-----", problemEnum.getDescription());
+            log.info("====================");
             problem.run();
             log.info("====================");
         }
