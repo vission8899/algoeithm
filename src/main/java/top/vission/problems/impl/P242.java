@@ -13,7 +13,7 @@ public class P242 implements LeetCodeProblemRun {
     public void run() {
         String s = "aa";
         String t = "bb";
-        log.info("case,s:{},t:{}", s,t);
+        log.info("case,s:{},t:{}", s, t);
         log.info("result:{}", isAnagram(s, t));
     }
 
@@ -22,7 +22,7 @@ public class P242 implements LeetCodeProblemRun {
         HashMap<String, Integer> map = new HashMap<>();
         char[] sCharArray = s.toCharArray();
         char[] tCharArray = t.toCharArray();
-        if (sCharArray.length-tCharArray.length!=0){
+        if (sCharArray.length - tCharArray.length != 0) {
             return false;
         }
 
@@ -40,6 +40,35 @@ public class P242 implements LeetCodeProblemRun {
 
         for (String string : map.keySet()) {
             if (map.get(string) != 0) {
+                return false;
+            }
+        }
+        return true;
+    }
+
+    /**
+     * 不用hashMap，用char-'a',数组下标偏移量表示字母
+     *
+     * @param s
+     * @param t
+     * @return
+     */
+    public boolean isAnagram2(String s, String t) {
+        char[] sCharArray = s.toCharArray();
+        char[] tCharArray = t.toCharArray();
+        if (sCharArray.length - tCharArray.length != 0) {
+            return false;
+        }
+
+        int[] ints = new int[26];
+
+        for (int i = 0; i < sCharArray.length; i++) {
+            ints[sCharArray[i] - 'a']++;
+            ints[tCharArray[i] - 'a']--;
+        }
+
+        for (int anInt : ints) {
+            if (anInt > 0) {
                 return false;
             }
         }
