@@ -13,7 +13,7 @@ public class Main {
     public static void main(String[] args) {
 
         List<String> problemIds = new ArrayList<>();
-        problemIds.add("242");
+        problemIds.add("54");
         problemRunTemplate(problemIds);
     }
 
@@ -23,19 +23,17 @@ public class Main {
         for (String problemId : problemIds) {
             LeetCodeProblemRun problem = problemUtils.getProblemById(problemId);
             if (problem == null) {
-                log.error("缺失题号:LeetCode{}",problemId);
+                log.error("缺失题号:LeetCode{}", problemId);
                 continue;
             }
             LeetCodeProblemEnum problemEnum = LeetCodeProblemEnum.getById(problemId);
             log.info("====================");
-            log.info("-----当前执行题号：LeetCode{},{}-----", problemEnum.getId(), problemEnum.getName());
-            log.info("-----问题描述：{}-----", problemEnum.getDescription());
+            log.info("-----当前执行题号：LeetCode{},题名:{},English Name:{}-----", problemEnum.getId(), problemEnum.getName(), problemEnum.getEnglishName());
             log.info("====================");
             problem.run();
             log.info("====================");
         }
     }
-
 
 
 }
