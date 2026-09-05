@@ -8,6 +8,7 @@ import lombok.extern.slf4j.Slf4j;
 public enum LeetCodeProblemEnum {
     P1("1", "两数之和", "Two Sum"),
     P26("26", "删除有序数组中的重复项", "Remove Duplicates From Sorted Array"),
+    P48("48", "旋转图像", "Rotate Image"),
     P54("54", "螺旋矩阵", "Spiral Matrix"),
     P88("88", "合并两个有序数组", "Merge Sorted Array"),
     P125("125", "验证回文串", "Valid Palindrome"),
