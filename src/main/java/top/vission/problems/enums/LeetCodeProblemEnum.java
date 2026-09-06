@@ -10,6 +10,7 @@ public enum LeetCodeProblemEnum {
     P26("26", "删除有序数组中的重复项", "Remove Duplicates From Sorted Array"),
     P48("48", "旋转图像", "Rotate Image"),
     P54("54", "螺旋矩阵", "Spiral Matrix"),
+    P73("73", "矩阵置零", "Set Matrix Zeroes"),
     P88("88", "合并两个有序数组", "Merge Sorted Array"),
     P125("125", "验证回文串", "Valid Palindrome"),
     P242("242", "有效的字母异位词", "Valid Anagram"),
