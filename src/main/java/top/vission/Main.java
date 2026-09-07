@@ -13,7 +13,7 @@ public class Main {
     public static void main(String[] args) {
 
         List<String> problemIds = new ArrayList<>();
-        problemIds.add("73");
+        problemIds.add("206");
         problemRunTemplate(problemIds);
     }
 

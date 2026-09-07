@@ -30,7 +30,7 @@ public class LeetCodeProblemUtils {
 //    }
 
     private void init() {
-        Set<Class<?>> classes = ClassUtil.scanPackage("top.vission.problems.impl");
+        Set<Class<?>> classes = ClassUtil.scanPackageBySuper("top.vission.problems.impl", LeetCodeProblemRun.class);
         for (Class<?> problemClass : classes) {
             try {
                 LeetCodeProblemRun problem = (LeetCodeProblemRun) problemClass.getConstructor().newInstance();
