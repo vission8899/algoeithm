@@ -13,6 +13,9 @@ public class Main {
     public static void main(String[] args) {
 
         List<String> problemIds = new ArrayList<>();
+//        for (LeetCodeProblemEnum value : LeetCodeProblemEnum.values()) {
+//            problemIds.add(value.getId());
+//        }
         problemIds.add("141");
         problemRunTemplate(problemIds);
     }
@@ -27,12 +30,11 @@ public class Main {
                 continue;
             }
             LeetCodeProblemEnum problemEnum = LeetCodeProblemEnum.getById(problemId);
-            log.info("====================");
+            log.info("==============================================================================================================");
             log.info("-----当前执行题号：LeetCode{},题名:{},English Name:{}-----", problemEnum.getId(), problemEnum.getName(), problemEnum.getEnglishName());
-            log.info("====================");
             problem.run();
-            log.info("====================");
         }
+        log.info("==============================================================================================================");
     }
 
 

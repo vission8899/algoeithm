@@ -20,9 +20,9 @@ public class P141 implements LeetCodeProblemRun {
         listNode2.next = listNode0;
         listNode0.next = listNode_4;
         listNode_4.next = listNode2;
-        log.info("request:{}",listNode3);
+        log.info("request:{}", listNode3);
         boolean hasCycle = hasCycle(listNode3);
-        log.info("result:{}",hasCycle);
+        log.info("result:{}", hasCycle);
     }
 
     public boolean hasCycle(ListNode head) {
