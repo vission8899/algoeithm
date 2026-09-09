@@ -14,6 +14,7 @@ public enum LeetCodeProblemEnum {
     P73("73", "矩阵置零", "Set Matrix Zeroes"),
     P88("88", "合并两个有序数组", "Merge Sorted Array"),
     P125("125", "验证回文串", "Valid Palindrome"),
+    P141("141", "环形链表", "Linked List Cycle"),
     P206("206", "反转链表", "Reverse Linked List"),
     P242("242", "有效的字母异位词", "Valid Anagram"),
     P344("344", "反转字符串", "Reverse String");
