@@ -9,7 +9,8 @@ public class Template implements LeetCodeProblemRun {
 
     @Override
     public void run() {
-
+        log.info("request:{}");
+        log.info("result:{}");
     }
 
 }

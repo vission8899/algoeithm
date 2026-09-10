@@ -7,6 +7,7 @@ import lombok.extern.slf4j.Slf4j;
 @Getter
 public enum LeetCodeProblemEnum {
     P1("1", "两数之和", "Two Sum"),
+    P20("20", "有效的括号", "Valid Parentheses"),
     P21("21", "合并两个有序链表", "Merge Two Sorted Lists"),
     P26("26", "删除有序数组中的重复项", "Remove Duplicates From Sorted Array"),
     P48("48", "旋转图像", "Rotate Image"),
