@@ -16,6 +16,7 @@ public enum LeetCodeProblemEnum {
     P88("88", "合并两个有序数组", "Merge Sorted Array"),
     P125("125", "验证回文串", "Valid Palindrome"),
     P141("141", "环形链表", "Linked List Cycle"),
+    P150("150", "逆波兰表达式求值", "Evaluate Reverse Polish Notation"),
     P155("155", "最小栈", "Min Stack"),
     P206("206", "反转链表", "Reverse Linked List"),
     P242("242", "有效的字母异位词", "Valid Anagram"),
