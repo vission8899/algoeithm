@@ -21,7 +21,8 @@ public enum LeetCodeProblemEnum {
     P206("206", "反转链表", "Reverse Linked List"),
     P232("232", "用栈实现队列", "Implement Queue Using Stacks"),
     P242("242", "有效的字母异位词", "Valid Anagram"),
-    P344("344", "反转字符串", "Reverse String");
+    P344("344", "反转字符串", "Reverse String"),
+    P622("622", "设计循环队列", "Design Circular Queue");
 
     private final String id;
     private final String name;
